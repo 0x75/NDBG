@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		033F9AD81782E2D400CEE806 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 033F9AD71782E2D400CEE806 /* main.c */; };
 		033F9ADA1782E2D400CEE806 /* NDBG.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033F9AD91782E2D400CEE806 /* NDBG.1 */; };
+		033F9AE51782E33C00CEE806 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 033F9AE11782E33C00CEE806 /* mach_excServer.c */; };
+		033F9AE61782E33C00CEE806 /* mach_excUser.c in Sources */ = {isa = PBXBuildFile; fileRef = 033F9AE21782E33C00CEE806 /* mach_excUser.c */; };
+		033F9AE71782E33C00CEE806 /* OSX.c in Sources */ = {isa = PBXBuildFile; fileRef = 033F9AE31782E33C00CEE806 /* OSX.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,11 @@
 		033F9AD41782E2D400CEE806 /* NDBG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NDBG; sourceTree = BUILT_PRODUCTS_DIR; };
 		033F9AD71782E2D400CEE806 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		033F9AD91782E2D400CEE806 /* NDBG.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NDBG.1; sourceTree = "<group>"; };
+		033F9AE01782E33C00CEE806 /* mach_exc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_exc.h; sourceTree = "<group>"; };
+		033F9AE11782E33C00CEE806 /* mach_excServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_excServer.c; sourceTree = "<group>"; };
+		033F9AE21782E33C00CEE806 /* mach_excUser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_excUser.c; sourceTree = "<group>"; };
+		033F9AE31782E33C00CEE806 /* OSX.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OSX.c; sourceTree = "<group>"; };
+		033F9AE41782E33C00CEE806 /* OSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSX.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,11 @@
 		033F9AD61782E2D400CEE806 /* NDBG */ = {
 			isa = PBXGroup;
 			children = (
+				033F9AE01782E33C00CEE806 /* mach_exc.h */,
+				033F9AE11782E33C00CEE806 /* mach_excServer.c */,
+				033F9AE21782E33C00CEE806 /* mach_excUser.c */,
+				033F9AE31782E33C00CEE806 /* OSX.c */,
+				033F9AE41782E33C00CEE806 /* OSX.h */,
 				033F9AD71782E2D400CEE806 /* main.c */,
 				033F9AD91782E2D400CEE806 /* NDBG.1 */,
 			);
@@ -118,6 +131,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				033F9AD81782E2D400CEE806 /* main.c in Sources */,
+				033F9AE51782E33C00CEE806 /* mach_excServer.c in Sources */,
+				033F9AE61782E33C00CEE806 /* mach_excUser.c in Sources */,
+				033F9AE71782E33C00CEE806 /* OSX.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

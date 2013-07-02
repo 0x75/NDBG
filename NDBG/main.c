@@ -2,17 +2,27 @@
 //  main.c
 //  NDBG
 //
-//  Created by Nico on 02.07.13.
-//  Copyright (c) 2013 JNE. All rights reserved.
+//  Created by System Administrator on 6/30/13.
+//  Copyright (c) 2013 System Administrator. All rights reserved.
 //
+#include "OSX.h"
 
-#include <stdio.h>
 
-int main(int argc, const char * argv[])
-{
-
-    // insert code here...
-    printf("Hello, World!\n");
+int main(int argc, char *argv[]) {
+    
+    Proc.Name = "/Users/Nico/succ";
+    Proc.Args = "";
+    
+    /* fire up the exception thread */
+    //exn_init();
+    
+    check_privileges();
+    CreateProcess();
+    printf("pid %i\n",Proc.pid);
+    SetBreakpoint(0x0000000100000e8d);
+     catch_exceptions();
+   // exn_init()
+    
+    puts("exiting...");
     return 0;
 }
-
